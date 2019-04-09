@@ -18,11 +18,9 @@ def first_challenge
   data.eachdo  |key, value|
     if key == :favorite_icecream_flavors
     value.delete_if{|flavor| flavor = "strawberry"}
-
-  #remember to return your newly altered contacts hash!
-  contacts
 end
 end
 end
 end
+contacts
 end
