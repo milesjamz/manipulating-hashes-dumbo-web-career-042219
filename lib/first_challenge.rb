@@ -13,8 +13,11 @@ def first_challenge
     }
   }
 
-  #your code here
-
+  contacts.eachdo |name, data|
+    if name == "Freddie Mercury"
+  data.eachdo  |key, value|
+    if key == :favorite_icecream_flavors
+    value.delete_if{|flavor| flavor = "strawberry"}
 
   #remember to return your newly altered contacts hash!
   contacts
