@@ -8,6 +8,7 @@ def second_challenge
 
 newList << groceries.values
 newList.flatten
+newList
   
 
 end
