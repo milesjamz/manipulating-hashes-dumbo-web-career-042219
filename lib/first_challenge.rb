@@ -14,7 +14,7 @@ def first_challenge
   }
 
   contacts.each do |name, data|
-      if name == "Freddy Mercury" #find the name at level 1
+      if name == "Freddy Mercury"
       data.each do |key, value|
          if key == :favorite_icecream_flavors #check the condition
             #delete_if method acts like each
