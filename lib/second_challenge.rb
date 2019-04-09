@@ -6,9 +6,8 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-newList << groceries.values
-newList.flatten
-newList
+groceries.flatten
+groceries
   
 
 end
