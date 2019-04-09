@@ -13,14 +13,15 @@ def first_challenge
     }
   }
 
-  contacts.eachdo |name, data|
-    if name == "Freddie Mercury"
-  data.eachdo  |key, value|
-    if key == :favorite_icecream_flavors
-    value.delete_if{|flavor| flavor = "strawberry"}
-end
-end
-end
-end
-contacts
+  contacts.each do |name, data|
+      if name == "Freddy Mercury" #find the name at level 1
+      data.each do |key, value|
+         if key == :favorite_icecream_flavors #check the condition
+            #delete_if method acts like each
+            value.delete_if {|flavor| flavor = "strawberry" } 
+         end
+      end
+      end
+   end
+   contacts
 end
