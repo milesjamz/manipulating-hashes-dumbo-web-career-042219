@@ -13,7 +13,7 @@ def first_challenge
     }
   }
 
-  contacts.eachdo |name, data|
+  contacts.eachdo |contacts, data|
     if name == "Freddie Mercury"
   data.eachdo  |key, value|
     if key == :favorite_icecream_flavors
